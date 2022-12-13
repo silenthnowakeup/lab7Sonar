@@ -5,7 +5,7 @@
 #ifndef LAB7SONAR_LIBRARY_H
 #define LAB7SONAR_LIBRARY_H
 char* getStr(char*);
-void outStr(char*);
+void outStr(const char*);
 int strLen(const char*);
 char* strCat(char*, const char*, int, int);
 int myf(const char*);
