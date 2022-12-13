@@ -29,7 +29,7 @@ char* getStr(char* s1)
     return s1;
 }
 
-void outStr(char* str)
+void outStr(const char* str)
 {
     int i = 0;
     while (str[i] != '\0')
@@ -82,8 +82,6 @@ int myf(const char* str)
         {
             znak = (str[i] == '-') ? -1 : 1;
         }
-        /* if (str[i] == '+' || str[i] == '-')
-             i++;*/
 
         if (str[i] >= '0' && str[i] <= '9')
         {
