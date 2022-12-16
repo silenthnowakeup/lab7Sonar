@@ -138,7 +138,7 @@ int contCheck() {
 
 void Task1()
 {
-    char *str = NULL;
+    char *str;
     printf("Input your string::");
     str = getStr(str);
     printf("\nsumma = %d \n", myf(str));
@@ -147,8 +147,8 @@ void Task1()
 
 void Task2()
 {
-    char* s1 = NULL;
-    char* s2 = NULL;
+    char* s1;
+    char* s2;
     int k;
     int m;
     printf("Input first string::");
