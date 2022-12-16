@@ -138,16 +138,17 @@ int contCheck() {
 
 void Task1()
 {
-    char *str;
+    char *str = NULL;
     printf("Input your string::");
     str = getStr(str);
     printf("\nsumma = %d \n", myf(str));
+    free(str);
 }
 
 void Task2()
 {
-    char* s1;
-    char* s2;
+    char* s1 = NULL;
+    char* s2 = NULL;
     int k;
     int m;
     printf("Input first string::");
@@ -160,6 +161,8 @@ void Task2()
     scanf("%d", &m);
     s1 = strCat(s1, s2, k, m);
     outStr(s1);
+    free(s1);
+    free(s2);
 }
 
 void endTask()
